@@ -1,0 +1,129 @@
+*{ margin:0; vertical-align:baseline; list-style:none; border:0; text-decoration: none;}
+
+html{
+    scroll-behavior: smooth;
+}
+
+:target{
+    scroll-margin-top: 10vh;
+}
+
+body{
+    background: #121212;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    gap: 30%;
+    top: 0;
+    width: 100%;
+    height: 10vh;
+    border-bottom: 2px #272727 solid;
+    background: #121212;
+}
+
+header span{
+    width: 5%;
+    margin-left: 5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: cyan;
+    font-weight:bold;
+}
+
+nav{
+    height: 100%;
+}
+
+a{
+    color: inherit;
+}
+
+section{
+    height: 100vh;
+    width: 100%;
+}
+
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3em;
+    margin-bottom: 4%;
+    color: #69d2e0;
+}
+
+h1::after{
+    content:'|';
+    animation: pisca .7s infinite;
+}
+
+#menu{
+    display: flex;
+    width: 90%;
+    height: 100%;
+    margin-right: 10%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+#menu li{
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    height:100%;
+    transition: 1s;
+}
+
+#menu li:hover{
+    background: #69d2e0;
+}
+
+#home{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+}
+
+#apres{
+    width: 40%;
+}
+
+#apres p{
+    text-align: justify;
+    font-size: 1.2em;
+    color: white;
+    margin-bottom: 5%;
+}
+
+#apres a div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15%;
+    width: 30%;
+    height: 50px;
+    border: 2px solid #0aa8e6;
+    color: #0aa8e6;
+    font-size: 1.1em;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+#apres a div:hover{
+    text-shadow: 0 0 5px #0aa8e6, 0 0 30px #0aa8e6, 0 0 50px #0aa8e6;
+    box-shadow: 0 0 5px #0aa8e6, 0 0 30px #0aa8e6, 0 0 50px #0aa8e6;
+  }
+
+@keyframes pisca{
+    0%,100%{
+        opacity: 1;
+    }
+
+    50%{
+        opacity: 0;
+    }
+}
